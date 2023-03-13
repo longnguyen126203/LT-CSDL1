@@ -1,0 +1,12 @@
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\bin\Debug\BaiTapThietKeForm.exe.config
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\bin\Debug\BaiTapThietKeForm.exe
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\bin\Debug\BaiTapThietKeForm.pdb
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.csprojAssemblyReference.cache
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.formChinh.resources
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.frmBai1.resources
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.Properties.Resources.resources
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.csproj.GenerateResource.cache
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.csproj.CoreCompileInputs.cache
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.exe
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.pdb
+C:\Users\PC413\source\repos\BaiTapThietKeForm\BaiTapThietKeForm\obj\Debug\BaiTapThietKeForm.frmBai2.resources
