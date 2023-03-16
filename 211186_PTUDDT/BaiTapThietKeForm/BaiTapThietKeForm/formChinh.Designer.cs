@@ -35,6 +35,7 @@ namespace BaiTapThietKeForm
             this.tsmlBai1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmlBai2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmlBai3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiBai4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@ namespace BaiTapThietKeForm
             this.nguyễnHoàngBảoLongToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmlBai1,
             this.tsmlBai2,
-            this.tsmlBai3});
+            this.tsmlBai3,
+            this.tsmiBai4});
             this.nguyễnHoàngBảoLongToolStripMenuItem.Name = "nguyễnHoàngBảoLongToolStripMenuItem";
             this.nguyễnHoàngBảoLongToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.nguyễnHoàngBảoLongToolStripMenuItem.Text = "Họ và tên của sinh viên";
@@ -80,6 +82,14 @@ namespace BaiTapThietKeForm
             this.tsmlBai3.Name = "tsmlBai3";
             this.tsmlBai3.Size = new System.Drawing.Size(180, 22);
             this.tsmlBai3.Text = "Bài 3";
+            this.tsmlBai3.Click += new System.EventHandler(this.tsmlBai3_Click);
+            // 
+            // tsmiBai4
+            // 
+            this.tsmiBai4.Name = "tsmiBai4";
+            this.tsmiBai4.Size = new System.Drawing.Size(180, 22);
+            this.tsmiBai4.Text = "Bài 4";
+            this.tsmiBai4.Click += new System.EventHandler(this.tsmiBai4_Click);
             // 
             // formChinh
             // 
@@ -104,6 +114,7 @@ namespace BaiTapThietKeForm
         private System.Windows.Forms.ToolStripMenuItem tsmlBai1;
         private System.Windows.Forms.ToolStripMenuItem tsmlBai2;
         private System.Windows.Forms.ToolStripMenuItem tsmlBai3;
+        private System.Windows.Forms.ToolStripMenuItem tsmiBai4;
     }
 }
 
