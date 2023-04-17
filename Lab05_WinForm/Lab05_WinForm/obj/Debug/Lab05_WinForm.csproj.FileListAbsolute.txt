@@ -1,0 +1,5 @@
+C:\Users\PC408\source\repos\Lab05_WinForm\Lab05_WinForm\obj\Debug\Lab05_WinForm.csprojAssemblyReference.cache
+C:\Users\PC408\source\repos\Lab05_WinForm\Lab05_WinForm\obj\Debug\Lab05_WinForm.Form1.resources
+C:\Users\PC408\source\repos\Lab05_WinForm\Lab05_WinForm\obj\Debug\Lab05_WinForm.Properties.Resources.resources
+C:\Users\PC408\source\repos\Lab05_WinForm\Lab05_WinForm\obj\Debug\Lab05_WinForm.csproj.GenerateResource.cache
+C:\Users\PC408\source\repos\Lab05_WinForm\Lab05_WinForm\obj\Debug\Lab05_WinForm.csproj.CoreCompileInputs.cache
