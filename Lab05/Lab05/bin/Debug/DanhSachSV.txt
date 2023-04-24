@@ -1,0 +1,10 @@
+﻿1610195*Nguyễn Đức Duy*Ân*Đà Lạt, Lâm Đồng*24/02/1998*1*CTK44*0933453678*251010789*An toàn và bảo mật hệ thống,Hệ điều hành
+1610194*Lê Thùy Lan*Chi*Nha Trang, Khánh Hòa*02/03/1998*0*CTK44*0985236684*251110889*Đồ án cơ sở,Lập trình CSDL
+1510451*Nguyễn Xuân*Thắng*01 Phù Đổng Thiên Vương, P8, Đà Lạt*15/12/1998*1*CTK40*0981345543*251810999*Mạng máy tính
+1610166*Võ Thị Thu*Ngân*01 Phù Đổng Thiên Vương, P8, Đà Lạt *03/12/1998*0*CTK40*0965443231*251000089*Hệ điều hành,Lập trình CSDL
+1610089*Nguyễn Thị Thùy*Linh*01 Phù Đổng Thiên Vương, P8, Đà Lạt *03/03/1998*0*CTK40*0874555122*251778789*Hệ điều hành,Lập trình CSDL
+1610167*Nguyễn Quốc*Anh*01 Phù Đổng Thiên Vương, P8, Đà Lạt *08/10/1998*1*CTK40*0874324122*252310789*Phương pháp NCKH
+1610288*Lê Nhật*Ánh*01 Phù Đổng Thiên Vương, P8, Đà Lạt *10/07/1998*1*CTK40*0822324112*251516789*Lập trình trên thiết bị di động
+1610290*Trần Thị Thùy*Trang*01 Phù Đổng Thiên Vương, P8, Đà Lạt *08/10/1998*0*CTK40*0974327954*251919989*Đồ án cơ sở
+1610091*Nguyễn Thị Thiên*Kim*01 Phù Đổng Thiên Vương, P8, Đà Lạt *11/05/1998*0*CTK40*0874624199*253012180*Lập trình mạng
+1610192*Nguyễn Gia*Bảo*01 Phù Đổng Thiên Vương, P8, Đà Lạt *05/10/1998*1*CTK40*0974324122*259019999*Lập trình trên thiết bị di động
