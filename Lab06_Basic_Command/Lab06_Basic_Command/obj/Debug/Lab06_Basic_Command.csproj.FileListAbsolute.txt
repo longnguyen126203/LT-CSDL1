@@ -1,0 +1,10 @@
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\bin\Debug\Lab06_Basic_Command.exe.config
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\bin\Debug\Lab06_Basic_Command.exe
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\bin\Debug\Lab06_Basic_Command.pdb
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.Form1.resources
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.Properties.Resources.resources
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.csproj.GenerateResource.Cache
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.exe
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.pdb
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.csprojResolveAssemblyReference.cache
+Z:\Lab06_Basic_Command\Lab06_Basic_Command\obj\Debug\Lab06_Basic_Command.frmFood.resources
