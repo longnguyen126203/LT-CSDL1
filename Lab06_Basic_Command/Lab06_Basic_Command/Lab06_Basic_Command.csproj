@@ -45,6 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagerForm.Designer.cs">
+      <DependentUpon>AccountManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillsDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillsDetailsForm.Designer.cs">
+      <DependentUpon>BillsDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillsForm.Designer.cs">
+      <DependentUpon>BillsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +77,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountManagerForm.resx">
+      <DependentUpon>AccountManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillsDetailsForm.resx">
+      <DependentUpon>BillsDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillsForm.resx">
+      <DependentUpon>BillsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodForm.resx">
       <DependentUpon>FoodForm.cs</DependentUpon>
     </EmbeddedResource>
