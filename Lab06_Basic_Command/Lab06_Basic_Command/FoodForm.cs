@@ -13,18 +13,16 @@ namespace Lab06_Basic_Command
 {
     public partial class frmFood : Form
     {
+        int categoryID;
+        
         public frmFood()
         {
             InitializeComponent();
         }
 
-        private void frmFood_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void LoadFood(int categoryID)
         {
+            this.categoryID = categoryID;
             //tạo đối tượng kết nối
             string connectionString = "server=PC408; database = RestaurantManagement; Integrated Security = true;";
             SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -42,7 +40,7 @@ namespace Lab06_Basic_Command
             string catName = sqlCommand.ExecuteScalar().ToString();
             this.Text = "Danh sách món ăn thuộc nhóm: " + catName;
 
-            sqlCommand.CommandText = "select * from food where FoodCategoryID = " + categoryID;
+            sqlCommand.CommandText = "Select ID, Name, Unit, Price, Notes from Food Where FoodCategoryID = " + categoryID;
 
             //tạo đối tượng DataAdapter
             SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
@@ -54,6 +52,8 @@ namespace Lab06_Basic_Command
             //Hiển thị danh sách món ăn lên Form
             dgvFood.DataSource = dt;
 
+            dgvFood.Columns[0].ReadOnly = true;
+
             //Đóng kết nối và giải phóng bộ nhớ
             sqlConnection.Close();
             sqlConnection.Dispose();
@@ -62,17 +62,20 @@ namespace Lab06_Basic_Command
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=.; database = RestaunrantManagement; Integrated Security = true; ";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand command = connection.CreateCommand();
+            string connectionString = "server=PC408; database = RestaurantManagement; Integrated Security = true; ";
+            SqlConnection sqlconnection = new SqlConnection(connectionString);
+            SqlCommand sqlcommand = sqlconnection.CreateCommand();
 
-            connection.Open();
+            sqlconnection.Open();
+            //sqlcommand.ExecuteNonQuery();
 
-            command.CommandText = "DELETE FROM Food WHERE FoodCategoryID = " + categoryID;
-            command.ExecuteNonQuery();
+
+            sqlcommand.CommandText = "DELETE FROM Food WHERE FoodCategoryID = " + categoryID;
+            
 
             for (int i = 0; i < dgvFood.Rows.Count - 1; i++)
             {
+                
                 string query = string.Format("" +
                     "INSERT INTO Food(Name, Unit, FoodCategoryID, Price, Notes)" + " " +
                     "VALUES (N'{0}', N'{1}', {2}, {3}, N'{4}')",
@@ -81,11 +84,12 @@ namespace Lab06_Basic_Command
                     categoryID,
                     dgvFood.Rows[i].Cells["Price"].Value,
                     dgvFood.Rows[i].Cells["Notes"].Value).ToString();
-                command.CommandText = query;
-                command.ExecuteNonQuery();
+                sqlcommand.CommandText = query;
+                sqlcommand.ExecuteNonQuery();
             }
 
-            connection.Close();
+                
+            sqlconnection.Close();
 
         }
 
@@ -97,16 +101,16 @@ namespace Lab06_Basic_Command
 
             string foodID = selectedRow.Cells[0].Value.ToString();
 
-            string connectionString = "server=.; database = RestaunrantManagement; Integrated Security = true; ";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand command = connection.CreateCommand();
+            string connectionString = "server=PC408; database = RestaurantManagement; Integrated Security = true; ";
+            SqlConnection sqlconnection = new SqlConnection(connectionString);
+            SqlCommand sqlcommand = sqlconnection.CreateCommand();
 
             string query = "DELETE FROM Food WHERE ID = " + foodID;
-            command.CommandText = query;
+            sqlcommand.CommandText = query;
 
-            connection.Open();
+            sqlconnection.Open();
 
-            int numOfRowsEffected = command.ExecuteNonQuery();
+            int numOfRowsEffected = sqlcommand.ExecuteNonQuery();
 
             if (numOfRowsEffected != 1)
             {
@@ -115,8 +119,8 @@ namespace Lab06_Basic_Command
             }
 
             dgvFood.Rows.Remove(selectedRow);
-
-            connection.Close();
+            
+            sqlconnection.Close();
         }
     }
 }

@@ -11,8 +11,11 @@ using System.Windows.Forms;
 
 namespace Lab06_Basic_Command
 {
+
     public partial class BillsDetailsForm : Form
     {
+        int billID;
+
         public BillsDetailsForm()
         {
             InitializeComponent();
@@ -21,7 +24,7 @@ namespace Lab06_Basic_Command
 		public void LoadBillDetails(int billID)
 		{
 			this.billID = billID;
-			string connectionString = "server=.; database = RestaunrantManagement; Integrated Security = true; ";
+			string connectionString = "server=PC408; database = RestaurantManagement; Integrated Security = true; ";
 			SqlConnection connection = new SqlConnection(connectionString);
 			SqlCommand command = connection.CreateCommand();
 
@@ -35,7 +38,7 @@ namespace Lab06_Basic_Command
 			string query = string.Format(
 				"SELECT Name, Unit, Price, Quantity, Price * Quantity AS Total FROM BillDetails " +
 				"JOIN Food ON BillDetails.FoodID = Food.ID " +
-				"WHERE BillDetails.BillID = {0}", billID).ToString();
+				"WHERE BillDetails.billID = {0}", billID).ToString();
 			command.CommandText = query;
 
 			SqlDataAdapter adapter = new SqlDataAdapter(command);

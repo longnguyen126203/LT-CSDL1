@@ -73,7 +73,7 @@
             this.Controls.Add(this.dgvFood);
             this.Name = "frmFood";
             this.Text = "FoodForm";
-            this.Load += new System.EventHandler(this.frmFood_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
             this.ResumeLayout(false);
 
