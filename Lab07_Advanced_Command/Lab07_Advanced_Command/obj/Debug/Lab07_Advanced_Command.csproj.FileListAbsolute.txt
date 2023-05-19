@@ -1,0 +1,10 @@
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\bin\Debug\Lab07_Advanced_Command.exe.config
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\bin\Debug\Lab07_Advanced_Command.exe
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\bin\Debug\Lab07_Advanced_Command.pdb
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.csprojResolveAssemblyReference.cache
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.Properties.Resources.resources
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.csproj.GenerateResource.Cache
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.exe
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.pdb
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.FormFood.resources
+Z:\Lab07_Advanced_Command\Lab07_Advanced_Command\obj\Debug\Lab07_Advanced_Command.FormFoodInfo.resources
