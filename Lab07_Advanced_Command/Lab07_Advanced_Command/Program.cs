@@ -16,7 +16,7 @@ namespace Lab07_Advanced_Command
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormFood());
+            Application.Run(new FormOrders());
         }
     }
 }

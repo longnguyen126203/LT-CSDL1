@@ -139,6 +139,7 @@
             this.btnAddNew.TabIndex = 12;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // cbbCatName
             // 
@@ -151,6 +152,11 @@
             // nudPrice
             // 
             this.nudPrice.Location = new System.Drawing.Point(112, 148);
+            this.nudPrice.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudPrice.Name = "nudPrice";
             this.nudPrice.Size = new System.Drawing.Size(374, 20);
             this.nudPrice.TabIndex = 14;
@@ -173,6 +179,7 @@
             this.btnUpdateFood.TabIndex = 16;
             this.btnUpdateFood.Text = "Update";
             this.btnUpdateFood.UseVisualStyleBackColor = true;
+            this.btnUpdateFood.Click += new System.EventHandler(this.btnUpdateFood_Click);
             // 
             // btnCancel
             // 
@@ -182,6 +189,7 @@
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // FormFoodInfo
             // 

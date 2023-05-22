@@ -38,7 +38,7 @@ namespace Lab07_Advanced_Command
 
             adapter.Fill(ds, "category");
 
-            cbbCatName.DataSource = ds.Tables["Catelogy"];
+            cbbCatName.DataSource = ds.Tables["Category"];
             cbbCatName.DisplayMember = "Name";
             cbbCatName.ValueMember = "ID";
 
@@ -60,7 +60,7 @@ namespace Lab07_Advanced_Command
         {
             try
 			{
-				string connectionString = "server=.; database = RestaurantManagement; Integrated Security = true; ";
+				string connectionString = "server=PC408; database = RestaurantManagement; Integrated Security = true; ";
 				SqlConnection connection = new SqlConnection(connectionString);
 
 				SqlCommand command = connection.CreateCommand();
@@ -88,7 +88,7 @@ namespace Lab07_Advanced_Command
 				if (numRowAffected > 0)
 				{
 					string foodID = command.Parameters["@id"].Value.ToString();
-					MessageBox.Show("Successfully adding new food. Food ID = {foodID}", "Message");
+					MessageBox.Show("Successfully adding new food. Food ID = " + foodID, "Message");
 					this.ResetText();
 				}
 				else
@@ -192,6 +192,21 @@ namespace Lab07_Advanced_Command
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            FormThemNhomMonAn thenMonAn = new FormThemNhomMonAn();
+            thenMonAn.FormClosed += FormFood_FormClosed;
+            thenMonAn.Show(this);
+        }
+
+        private void FormFood_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            int index = cbbCatName.SelectedIndex;
+            cbbCatName.SelectedIndex = -1;
+            cbbCatName.SelectedIndex = index;
+            InitValues();
         }
     }
 }

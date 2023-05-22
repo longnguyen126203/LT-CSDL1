@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvFoodList = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmCalculateQuantity = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmSeperator = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmAddFood = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmUpdateFood = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbCategory = new System.Windows.Forms.ComboBox();
             this.lable1 = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lable2 = new System.Windows.Forms.Label();
             this.lblCatName = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmCalculateQuantity = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSeperator = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmAddFood = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmUpdateFood = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearchByName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodList)).BeginInit();
@@ -59,6 +59,43 @@
             this.dgvFoodList.Name = "dgvFoodList";
             this.dgvFoodList.Size = new System.Drawing.Size(724, 271);
             this.dgvFoodList.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmCalculateQuantity,
+            this.tsmSeperator,
+            this.tsmAddFood,
+            this.tsmUpdateFood});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 92);
+            // 
+            // tsmCalculateQuantity
+            // 
+            this.tsmCalculateQuantity.Name = "tsmCalculateQuantity";
+            this.tsmCalculateQuantity.Size = new System.Drawing.Size(190, 22);
+            this.tsmCalculateQuantity.Text = "Tính số lượng món ăn";
+            this.tsmCalculateQuantity.Click += new System.EventHandler(this.tsmCalculateQuantity_Click);
+            // 
+            // tsmSeperator
+            // 
+            this.tsmSeperator.Name = "tsmSeperator";
+            this.tsmSeperator.Size = new System.Drawing.Size(190, 22);
+            this.tsmSeperator.Text = "Ngăn cách";
+            // 
+            // tsmAddFood
+            // 
+            this.tsmAddFood.Name = "tsmAddFood";
+            this.tsmAddFood.Size = new System.Drawing.Size(190, 22);
+            this.tsmAddFood.Text = "Thêm món ăn";
+            this.tsmAddFood.Click += new System.EventHandler(this.tsmAddFood_Click);
+            // 
+            // tsmUpdateFood
+            // 
+            this.tsmUpdateFood.Name = "tsmUpdateFood";
+            this.tsmUpdateFood.Size = new System.Drawing.Size(190, 22);
+            this.tsmUpdateFood.Text = "Cập nhật món ăn";
+            this.tsmUpdateFood.Click += new System.EventHandler(this.tsmUpdateFood_Click);
             // 
             // label1
             // 
@@ -114,43 +151,6 @@
             this.lblCatName.TabIndex = 6;
             this.lblCatName.Text = "...";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCalculateQuantity,
-            this.tsmSeperator,
-            this.tsmAddFood,
-            this.tsmUpdateFood});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 92);
-            // 
-            // tsmCalculateQuantity
-            // 
-            this.tsmCalculateQuantity.Name = "tsmCalculateQuantity";
-            this.tsmCalculateQuantity.Size = new System.Drawing.Size(190, 22);
-            this.tsmCalculateQuantity.Text = "Tính số lượng món ăn";
-            this.tsmCalculateQuantity.Click += new System.EventHandler(this.tsmCalculateQuantity_Click);
-            // 
-            // tsmSeperator
-            // 
-            this.tsmSeperator.Name = "tsmSeperator";
-            this.tsmSeperator.Size = new System.Drawing.Size(190, 22);
-            this.tsmSeperator.Text = "Ngăn cách";
-            // 
-            // tsmAddFood
-            // 
-            this.tsmAddFood.Name = "tsmAddFood";
-            this.tsmAddFood.Size = new System.Drawing.Size(190, 22);
-            this.tsmAddFood.Text = "Thêm món ăn";
-            this.tsmAddFood.Click += new System.EventHandler(this.tsmAddFood_Click);
-            // 
-            // tsmUpdateFood
-            // 
-            this.tsmUpdateFood.Name = "tsmUpdateFood";
-            this.tsmUpdateFood.Size = new System.Drawing.Size(190, 22);
-            this.tsmUpdateFood.Text = "Cập nhật món ăn";
-            this.tsmUpdateFood.Click += new System.EventHandler(this.tsmUpdateFood_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -166,6 +166,7 @@
             this.txtSearchByName.Name = "txtSearchByName";
             this.txtSearchByName.Size = new System.Drawing.Size(150, 20);
             this.txtSearchByName.TabIndex = 9;
+            this.txtSearchByName.TextChanged += new System.EventHandler(this.txtSearchByName_TextChanged);
             // 
             // FormFood
             // 

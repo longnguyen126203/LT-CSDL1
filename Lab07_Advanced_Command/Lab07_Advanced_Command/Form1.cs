@@ -111,7 +111,7 @@ namespace Lab07_Advanced_Command
 				command.ExecuteNonQuery();
 
 				string result = command.Parameters["@numSaleFood"].Value.ToString();
-                MessageBox.Show("Tổng số lượng món " + rowView["Name"] + " đã bán là: " + result + " " + rowView["Unit"]);
+                MessageBox.Show ("Tổng số lượng món " + rowView["Name"] + " đã bán là: " + result + " " + rowView["Unit"]);
 
                 if (string.IsNullOrWhiteSpace(result))
                     MessageBox.Show("Món " + rowView["Name"] + " chưa bán được " + rowView["Unit"] + " nào!");
@@ -157,7 +157,7 @@ namespace Lab07_Advanced_Command
 		{
 			if (foodTable == null) return;
 
-			string filterExpression = "Name LIKE '%{txtSearchByName.Text}%'";
+			string filterExpression = $"Name LIKE '%{txtSearchByName.Text}%'";
 			string sortExpression = "Price DESC";
 
 			DataViewRowState rowStateFilter = DataViewRowState.OriginalRows;
@@ -166,5 +166,7 @@ namespace Lab07_Advanced_Command
 
 			dgvFoodList.DataSource = foodView;
 		}
+
+        
     }
 }
